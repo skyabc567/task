@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var score;
+    var sum =+ 0;
+    var count =+ 0;
+    var max =+ 0;
+    var min =+ Infinity;
+    while(true) {
+        score =+ prompt("请输入学生的成绩");    
+        if( score != 0) {
+            sum += score;
+            count++;
+        } else {
+            break;
+        }
+        if( score > max) {
+            max = score;
+        }
+        if( score < min) {
+            min = score;
+        }
+        
+    }
+    alert("最低分" + min);
+    alert("最高分" + max);
+    alert("平均分" + sum / count);
+</script>
+</html>

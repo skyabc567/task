@@ -9,13 +9,16 @@
     
 </body>
 <script>
-    var n = prompt("请输入一个整数:");
-    var i;
-    for(i = 2; i < n ; i++) {
-        if( n % i == 0) {
+    var n = prompt("请输入一个整数n");
+    var b;
+    var c;
+    for ( b = 2; b <= n; b++) {
+        for ( c = 2; c * c <= b; c++ ) {
+            if ( b % c == 0 )
             break;
-        } else {
-            console.log(i);
+            }
+        if( c * c > b ) {
+            console.log(b);  
         }
     }
 </script>

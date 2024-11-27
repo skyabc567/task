@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var x ;
+    var num = Math.floor((Math.random()*100) + 1)
+    while (true) {
+        x =  prompt("猜一下我是1到100里的哪一个呢");
+        if( x < num) {
+            alert("就这么小吗");
+        } else if( x > num) {
+            alert("太大了啦");
+        } else {
+            alert("恭喜你答对啦");
+            break;
+        }
+    }
+</script>
+</html>

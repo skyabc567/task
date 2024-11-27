@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var n = prompt("请输入一个整数");
+    let a = [1,1]
+    for(let i = 2; i < n; i++) {
+        a.push(a[a.length-1] + a[a.length-2]);
+    }
+    console.log(a + ",");
+</script>
+</html>
